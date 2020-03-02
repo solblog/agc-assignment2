@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  userName : string; 
+
+  isEmptyUser(){
+    if (!this.userName)
+      return true; 
+  }
+
+  onClickReset(){
+    this.userName='';
+  }
+
 }
